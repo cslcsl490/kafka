@@ -11,11 +11,11 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by User on 2016/4/19.
  */
-public class kafkaProducer extends Thread{
+public class kafkaProducerDemo extends Thread{
 
     private String topic;
 
-    public kafkaProducer(String topic){
+    public kafkaProducerDemo(String topic){
         super();
         this.topic = topic;
     }
@@ -45,7 +45,7 @@ public class kafkaProducer extends Thread{
 
 
     public static void main(String[] args) {
-        new kafkaProducer("my-replicated-topic").start();// 使用kafka集群中创建好的主题 test
+        new kafkaProducerDemo("my-replicated-topic").start();// 使用kafka集群中创建好的主题 test
 
     }
 }
